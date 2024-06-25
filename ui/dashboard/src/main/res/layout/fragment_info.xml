@@ -1,0 +1,217 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp">
+
+
+        <TextView
+            android:id="@+id/home_tab_ip_info_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/home_tab_title_text"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/home_tab_ip_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="186.154.37.139"
+            android:textColor="@color/secondary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_info_title_text" />
+
+
+        <Button
+            android:id="@+id/searchBtn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="@color/secondary"
+            android:text="@string/search_btn_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_query" />
+
+
+        <!-- Latitude-->
+
+        <TextView
+            android:id="@+id/home_tab_ip_latitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_latitude_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchBtn" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_latitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_latitude_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="4.6115" />
+
+        <!--    Longitude -->
+        <TextView
+            android:id="@+id/home_tab_ip_longitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_longitude_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_latitude_label" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_longitude_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_longitude_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="74.0888" />
+
+        <!--    Continent -->
+        <TextView
+            android:id="@+id/home_tab_ip_continent_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_continent_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_longitude_label" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_continent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_continent_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="South America" />
+
+        <!-- country -->
+        <TextView
+            android:id="@+id/home_tab_ip_country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_country_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_continent_label" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_country_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_country_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Bogota" />
+
+        <!-- City -->
+        <TextView
+            android:id="@+id/home_tab_ip_city_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_city_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_country_label" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_city_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Bogotá" />
+
+        <!-- ISP -->
+        <TextView
+            android:id="@+id/home_tab_ip_isp_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/home_tab_ip_isp_label_text"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_tab_ip_city_label" />
+
+        <TextView
+            android:id="@+id/home_tab_ip_isp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/home_tab_ip_isp_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Bogotá" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

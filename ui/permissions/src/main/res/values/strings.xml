@@ -1,0 +1,5 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="location_permission_request_title">Location permission needed</string>
+    <string name="location_permission_request_description">IpInfo needs access to your location for give a better and more accurate information about your IP.\n If you don\'t feel comfortable with this permission, you can go to settings and modify it at any time.</string>
+</resources>

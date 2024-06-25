@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/permissions_nav_graph"
+    app:startDestination="@id/requestPermissionsWizardFragment">
+
+    <fragment
+        android:id="@+id/requestPermissionsWizardFragment"
+        android:name="com.camilogo1200.permissions.ui.fragments.RequestPermissionsWizardFragment"
+        android:label="fragment_request_permissions_wizard"
+        tools:layout="@layout/fragment_request_permissions_wizard" />
+    <fragment
+        android:id="@+id/requestLocationPermissionFragment"
+        android:name="com.camilogo1200.permissions.ui.fragments.RequestLocationPermissionFragment"
+        android:label="RequestLocationPermissionFragment"
+        tools:layout="@layout/fragment_request_location_permission" />
+</navigation>
