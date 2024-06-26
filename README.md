@@ -1,7 +1,7 @@
 ## Note:
 Due to time constraints, and personal situations, I couldn't link the main project. I suggest using the UI.demo project to run the solution.
 
-Constrains:
+## Constraints:
 - Due to some business decisions by the company the project is done using the old Views framework on Android not Jetpack Compose
 
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/dd9c54ed-b8ff-4060-85bd-33345e1ffdea)
@@ -22,8 +22,9 @@ Constrains:
 - UI, Domain, Data
 - MVVM - MVI
 - Kotlin Flows & Coroutines
+- DI Using Dagger Hilt
 
-### Typical ui folder organization
+### Typical UI folder organization
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/0c434da6-4dbd-4333-a2f8-95042053e42c)
 
 ## Tech Stack 
@@ -33,6 +34,7 @@ Constrains:
 - ViewPager
 - Room
 - Lifecycles
+- Hilt
 
 ### Asynchronity 
 - Kotlin Coroutines
