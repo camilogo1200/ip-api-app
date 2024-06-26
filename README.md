@@ -7,6 +7,10 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 ## Application Icon
 <img src="https://github.com/camilogo1200/ip-api-app/assets/456256/dd9c54ed-b8ff-4060-85bd-33345e1ffdea" width="250px"/>
 
+
+## Location Permissions Request ( for tracking user changes on location)
+<img src="https://github.com/camilogo1200/ip-api-app/assets/456256/f751d283-c436-4fad-ad52-f3e4066abdba" width="350px"/>
+
 ## Main Screen (Query Screen)
 <img src="https://github.com/camilogo1200/ip-api-app/assets/456256/15c35c46-205d-42bb-8435-44e29474423c" width="350px"/>
 
