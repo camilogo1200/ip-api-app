@@ -50,7 +50,8 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/d88a2810-d983-4812-b9af-7dc85fad209e)
 
 ## Common Module (Utils module) 
-![image](https://github.com/camilogo1200/ip-api-app/assets/456256/cf73a058-ba06-49e5-aa28-3fa45af2ff94)
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/e57f6bd3-1f57-4066-add2-bca80dc1f595)
+
 
 
 ## Tech Stack 
