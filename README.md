@@ -1,16 +1,17 @@
 ## Note:
 Due to time constraints, and personal situations, I couldn't link the main project. I suggest using the UI.demo project to run the solution.
 
-## Constraints:
-- Due to some business decisions by the company the project is done using the old Views framework on Android not Jetpack Compose
+## Constraints (Views Framework):
+- Due to some business decisions and aligned to the current tech stack of the company, the project was done using the old Views framework on Android, not Jetpack Compose
 
-![image](https://github.com/camilogo1200/ip-api-app/assets/456256/dd9c54ed-b8ff-4060-85bd-33345e1ffdea)
+## Application Icon
+<img src="https://github.com/camilogo1200/ip-api-app/assets/456256/dd9c54ed-b8ff-4060-85bd-33345e1ffdea" width="250px"/>
 
+## Main Screen (Query Screen)
+<img src="https://github.com/camilogo1200/ip-api-app/assets/456256/15c35c46-205d-42bb-8435-44e29474423c" width="350px"/>
 
-![image](https://github.com/camilogo1200/ip-api-app/assets/456256/15c35c46-205d-42bb-8435-44e29474423c)
-
-
-![image](https://github.com/camilogo1200/ip-api-app/assets/456256/380da7f1-754b-42ed-83ae-f371d2a69e78)
+## History Screen
+<img src="https://github.com/camilogo1200/ip-api-app/assets/456256/380da7f1-754b-42ed-83ae-f371d2a69e78" width="350px"/>
 
 
 # Description
@@ -24,14 +25,14 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 - MVVM - MVI
 - Kotlin Flows & Coroutines
 - DI Using Dagger Hilt
-- Navigation using navigation component and Nested navigation graphs, and global actions
+- Navigation using navigation component, Nested navigation graphs, and global actions
 
 ## Navigation
 
 ### Main Navigation
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/bd399481-664b-4a18-a9b3-250122172989)
 
-## Main dashboard Navigation graph
+## Main Nested Dashboard Navigation Graph (With Global actions)
 
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/32d497e4-8c17-40fa-91e9-1fc091502f73)
 
@@ -53,14 +54,15 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 - Hilt
 
 ### Asynchronity 
+- Suspend functions
 - Kotlin Coroutines
-- Flows
+- Kotlin Flows
 
 ### Network ( network module )
 - Retrofit
 - OkHttp
 
 ### Serialization
--KotlinX.Serialization
+- KotlinX.Serialization
 
 ## Modules
