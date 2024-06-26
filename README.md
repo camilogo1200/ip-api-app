@@ -40,12 +40,17 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/32d497e4-8c17-40fa-91e9-1fc091502f73)
 
-
 ### Typical UI folder organization
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/0c434da6-4dbd-4333-a2f8-95042053e42c)
 
 ### Database module ( module view )
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/67162f4b-f3b1-447d-84ac-ab937880e865)
+
+### Network Module
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/d88a2810-d983-4812-b9af-7dc85fad209e)
+
+##Common Module (Utils module)
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/cf73a058-ba06-49e5-aa28-3fa45af2ff94)
 
 
 ## Tech Stack 
