@@ -24,13 +24,28 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 - MVVM - MVI
 - Kotlin Flows & Coroutines
 - DI Using Dagger Hilt
+- Navigation using navigation component and Nested navigation graphs, and global actions
+
+## Navigation
+
+### Main Navigation
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/bd399481-664b-4a18-a9b3-250122172989)
+
+## Main dashboard Navigation graph
+
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/32d497e4-8c17-40fa-91e9-1fc091502f73)
+
 
 ### Typical UI folder organization
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/0c434da6-4dbd-4333-a2f8-95042053e42c)
 
+
 ## Tech Stack 
 
 ### Jetpack Libraries
+- View binding
+- Data binding
+- Navigation component
 - ViewModel
 - ViewPager
 - Room
