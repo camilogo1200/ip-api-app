@@ -44,6 +44,9 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 ### Typical UI folder organization
 ![image](https://github.com/camilogo1200/ip-api-app/assets/456256/0c434da6-4dbd-4333-a2f8-95042053e42c)
 
+### Database module ( module view )
+![image](https://github.com/camilogo1200/ip-api-app/assets/456256/67162f4b-f3b1-447d-84ac-ab937880e865)
+
 
 ## Tech Stack 
 
