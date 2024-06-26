@@ -1,7 +1,9 @@
 package com.camilogo1200.data.datasources.local
 
 import com.camilogo1200.ipinfo.domain.ipmodels.IpInfo
+import kotlinx.coroutines.flow.Flow
 
 interface IpInfoLocalDataSources {
-    suspend fun saveIpInfo(ipInformation: IpInfo): Result<IpInfo>
+    suspend fun retrieveLocalIpInfo(): Flow<List<IpInfo>>
+    suspend fun saveIpInfo(ipInformation: List<IpInfo>)
 }

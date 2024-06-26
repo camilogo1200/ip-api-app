@@ -38,6 +38,8 @@ android {
 }
 
 dependencies {
+    api(project(":data:repositories:local:database-api"))
+    implementation(project(":data:repositories:local:database:room"))
     implementation(project(":domain:ipmodels"))
     implementation(project(":network"))
     implementation(project(":common"))

@@ -2,16 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home_menu"
-        android:enabled="true"
-        android:icon="@drawable/baseline_home_24"
-        android:title="@string/bottom_nav_menu_dashboard" />
-
-    <item
-        android:id="@+id/query_menu"
+        android:id="@+id/search_menu"
         android:enabled="true"
         android:icon="@drawable/baseline_search_24"
-        android:title="@string/bottom_nav_menu_query" />
+        android:title="@string/bottom_nav_menu_dashboard" />
 
     <item
         android:id="@+id/history_menu"

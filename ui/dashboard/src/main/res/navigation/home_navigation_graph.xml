@@ -5,6 +5,18 @@
     android:id="@+id/home_navigation_graph"
     app:startDestination="@id/infoFragment">
 
+    <action
+        android:id="@+id/action_go_to_home"
+        app:destination="@id/infoFragment" />
+
+    <action
+        android:id="@+id/action_go_to_history"
+        app:destination="@id/historyFragment" />
+
+    <action
+        android:id="@+id/action_go_to_profile"
+        app:destination="@id/settingsFragment" />
+
     <fragment
         android:id="@+id/historyFragment"
         android:name="com.camilogo1200.dashboard.fragments.HistoryFragment"
@@ -29,13 +41,10 @@
         tools:layout="@layout/fragment_info">
         <action
             android:id="@+id/action_infoFragment_to_historyFragment"
-            app:destination="@id/historyFragment" />
+            app:destination="@id/historyFragment"
+            app:popUpTo="@id/infoFragment" />
         <action
             android:id="@+id/action_infoFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/dashboardFragment"
-        android:name="com.camilogo1200.dashboard.fragments.DashboardFragment"
-        android:label="DashboardFragment" />
 </navigation>

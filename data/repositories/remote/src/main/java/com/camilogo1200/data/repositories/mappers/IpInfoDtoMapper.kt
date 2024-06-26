@@ -1,11 +1,12 @@
 package com.camilogo1200.data.repositories.mappers
 
+import com.camilogo1200.common.mapper.Mapper
 import com.camilogo1200.common.network.dto.IpInfoDto
 import com.camilogo1200.ipinfo.domain.ipmodels.IpInfo
 import javax.inject.Inject
 
 class IpInfoDtoMapper @Inject constructor() : Mapper<IpInfoDto, IpInfo> {
-    override fun to(dto: IpInfoDto): IpInfo {
+    override fun toObj(dto: IpInfoDto): IpInfo {
         return IpInfo(
             dto.status,
             dto.continent,

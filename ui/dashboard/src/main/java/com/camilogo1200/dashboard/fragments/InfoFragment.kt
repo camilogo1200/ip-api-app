@@ -6,6 +6,7 @@ import android.text.SpannableStringBuilder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -30,12 +31,14 @@ class InfoFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate<FragmentInfoBinding>(
+        binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_info,
             container,
             false
         )
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
         return binding.root
     }
 
@@ -60,11 +63,24 @@ class InfoFragment : Fragment() {
             }
 
             is IpInfoViewState.OnViewLoaded -> {
-                handleOnViewLoaded(viewState as IpInfoViewState.OnViewLoaded)
+                handleOnViewLoaded(viewState)
             }
 
             is IpInfoViewState.OnFetchInfoFailed -> {
+                Toast.makeText(
+                    requireContext(),
+                    "There was an error fetching data",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
 
+            is IpInfoViewState.OnDataValidationFailed -> {
+                //TODO show dialog with errors
+                Toast.makeText(
+                    requireContext(),
+                    "Check the Ip address again. data validation failed.",
+                    Toast.LENGTH_LONG
+                ).show()
             }
 
             else -> {}

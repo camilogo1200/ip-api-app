@@ -38,8 +38,11 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 dependencies {
+    implementation(project(":domain:ipmodels"))
+    implementation(project(":common"))
     kapt(libs.androidx.room)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.jetbrains.kotlinx.serialization.datetime)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation)

@@ -14,11 +14,12 @@ class IpInfoRemoteDatasourceImpl @Inject constructor(
     @IoDispatcher
     private val dispatcher: CoroutineDispatcher
 ) : IpInfoRemoteDatasource {
-    override suspend fun fetchIpInfoData(): Result<IpInfoDto> {
+    override suspend fun fetchIpInfoData(ip: String?): Result<IpInfoDto> {
         val errorText = "There was an error fetching IpInfo from the APi Endpoint"
         return withContext(dispatcher) {
             try {
-                val response = ipApiInfo.fetchIpInfo()
+                val ipQuery = if (ip.isNullOrBlank()) "" else ip
+                val response = ipApiInfo.fetchIpInfo(ipQuery)
                 if (response.isSuccessful) {
                     val result = response.body()?.let {
                         Result.success(it)

@@ -39,6 +39,8 @@ dependencies {
     implementation(libs.google.dagger.hilt)
     kapt(libs.google.dagger.hilt.compiler)
     implementation(libs.jetbrains.kotlinx.coroutines)
+    implementation(libs.jetbrains.kotlinx.serialization)
+    implementation(libs.jetbrains.kotlinx.serialization.datetime)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

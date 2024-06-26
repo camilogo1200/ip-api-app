@@ -41,9 +41,9 @@ java {
 
 dependencies {
     implementation(project(":domain:ipmodels"))
-    implementation(project(":data:datasources"))
-    implementation(project(":network"))
-    implementation(project(":common"))
+    api(project(":data:datasources"))
+    api(project(":network"))
+    api(project(":common"))
     implementation(libs.google.dagger.hilt)
     kapt(libs.google.dagger.hilt.compiler)
     implementation(libs.jetbrains.kotlinx.coroutines)

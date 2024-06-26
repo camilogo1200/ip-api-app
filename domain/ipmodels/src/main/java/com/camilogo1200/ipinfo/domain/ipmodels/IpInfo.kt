@@ -1,7 +1,9 @@
 package com.camilogo1200.ipinfo.domain.ipmodels
 
+import com.camilogo1200.common.serializers.DateSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import java.util.Date
 
 @Serializable
 data class IpInfo(
@@ -21,5 +23,7 @@ data class IpInfo(
     @SerialName("org") var org: String? = null,
     @SerialName("as") var asNumber: String? = null,
     @SerialName("mobile") var mobile: Boolean? = null,
-    @SerialName("query") var query: String? = null
+    @SerialName("query") var query: String? = null,
+    @Serializable(with = DateSerializer::class)
+    @SerialName("timeStamp") var timeStamp: Date? = Date()
 )

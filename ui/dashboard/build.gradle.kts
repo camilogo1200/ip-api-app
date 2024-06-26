@@ -40,6 +40,7 @@ android {
 
 dependencies {
     implementation(project(":common"))
+    implementation(project(":domain:usecases"))
     implementation(project(":domain:ipmodels"))
     implementation(project(":data:repositories:remote"))
 
@@ -67,6 +68,8 @@ dependencies {
     implementation(libs.squareup.okhttp.logging.interceptor)
     implementation(libs.squareup.retrofit2)
     testImplementation(libs.junit)
+    testImplementation(libs.jetbrains.kotlinx.coroutines.testing)
+    testImplementation(libs.mockk)
     testImplementation(libs.androidx.room.testing)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
