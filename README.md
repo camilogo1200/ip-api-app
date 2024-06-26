@@ -25,6 +25,7 @@ Due to time constraints, and personal situations, I couldn't link the main proje
 
 - Multi-module project focused on modularity, and independent workloads, that result in  much easier releases for the different components of the application.
 - Clean Architecture and domain-centric approach
+- Single Activity Application
 - UI, Domain, Data
 - MVVM - MVI
 - Kotlin Flows & Coroutines
